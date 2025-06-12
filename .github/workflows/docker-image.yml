@@ -1,9 +1,11 @@
 name: Docker Image CI
 
-push:
-  paths:
-    - 'deployment/**'
-
+on:
+  push:
+    paths:
+      - 'deployment/app/**'
+      - 'deployment/Dockerfile'
+      
 jobs:
   docker:
     runs-on: ubuntu-latest
