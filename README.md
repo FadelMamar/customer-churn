@@ -59,7 +59,7 @@ To build and run the Docker container:
 * ``model.joblib`` is the filename of the saved scikit-learn model located at ``$(pwd)/models``.
 
 ### Agentic AI integration
-The deployment allows an integration with Agentic AI workflows through an **MCP server**. It is available at ``hostname:4141/mcp`` aassuming that the service the above docker run command is executed.
+The deployment allows an integration with Agentic AI workflows through an **MCP server**. It is available at ``hostname:4141/mcp`` assuming that the service the above docker run command is executed.
 
 
 # 🧪 Future Work
