@@ -10,7 +10,7 @@ services:
     image: churnee:latest
 
     volumes:
-      - D:\workspace\repos\customer-churn\models:/models
+      - ../models:/models
     
     environment:
       - MODEL_NAME=logisticreg_2025-06-12_14-06.joblib
