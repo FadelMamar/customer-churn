@@ -1,7 +1,8 @@
 name: Docker Image CI
 
-on:
-  push:
+push:
+  paths:
+    - 'deployment/**'
 
 jobs:
   docker:
