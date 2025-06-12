@@ -57,7 +57,7 @@ docker build -t churn-predictor .
 ### Run the container
 docker run -p 4141:4141 -v $(pwd)/models:/models churn-predictor
 
-# Agentic AI integration
+### Agentic AI integration
 The deployment allows an integration with Agentic AI workflows through an **MCP server**. It is available at ``hostname:4141/mcp`` aassuming that the service the above docker run command is executed.
 
 
