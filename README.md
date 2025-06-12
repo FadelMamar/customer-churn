@@ -52,10 +52,11 @@ Docker Features:
 
 To build and run the Docker container:
 ### Build the image
-docker build -t churn-predictor .
+* ``docker build -t churn-predictor .``
 
 ### Run the container
-docker run -p 4141:4141 -v $(pwd)/models:/models churn-predictor
+* ``docker run -p 4141:4141 -e MODEL_NAME=model.joblib -v $(pwd)/models:/models churn-predictor``
+* ``model.joblib`` is the filename of the saved scikit-learn model located at ``$(pwd)/models``.
 
 ### Agentic AI integration
 The deployment allows an integration with Agentic AI workflows through an **MCP server**. It is available at ``hostname:4141/mcp`` aassuming that the service the above docker run command is executed.
