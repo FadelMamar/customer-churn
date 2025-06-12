@@ -50,20 +50,17 @@ class Model(object):
             raise NotImplementedError()
 
     def train(self, X: pd.DataFrame, y: np.ndarray):
-        self.model.fit(X=X, y=y)
+        self.estimator.fit(X=X, y=y)
         return self
 
     def val(
         self,
         X: pd.DataFrame,
         y: np.ndarray,
-        # scoring:str=None,
         pr_curve: bool = False,
         tune_threshold: bool = False,
     ) -> float:
-        # if scoring:
-        # scorer = get_scorer(scoring=scoring)
-
+        
         estimator = self.estimator
 
         if tune_threshold:
@@ -108,6 +105,8 @@ class Model(object):
             verbose=verbose,
             n_jobs=n_jobs,
         )
+
+        param_grid = {f"model__{k}": v for k, v in param_grid.items()}
 
         if algorithm == "grid":
             self._tuner = GridSearchCV(param_grid=param_grid, **cfg)

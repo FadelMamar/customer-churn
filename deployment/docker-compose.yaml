@@ -1,0 +1,19 @@
+# env_file: .env
+
+services:
+
+  churnee:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+
+    image: churnee:latest
+
+    volumes:
+      - models:/models
+
+    ports:
+      - "4141:4141"
+
+volumes:
+  models: D:\workspace\repos\customer-churn\models

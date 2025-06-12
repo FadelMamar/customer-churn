@@ -46,6 +46,7 @@ class CLI(object):
 
     def tune(
         self,
+        model_name:str,
         data_path: str,
         algorithm="optuna",
         num_folds: int = 5,
@@ -61,7 +62,7 @@ class CLI(object):
             add_interaction_only=False,
         )
 
-        model = Model(name="logisticreg", preprocessor=preprocessor)
+        model = Model(name=model_name, preprocessor=preprocessor)
 
         X_tr, y_tr = load_data(data_path)
 
@@ -72,8 +73,6 @@ class CLI(object):
             ],
             "C": np.logspace(-2, 2, 10).tolist(),
         }
-
-        param_grid = {f"model__{k}": v for k, v in param_grid.items()}
 
         model.tune(
             X=X_tr,

@@ -9,6 +9,7 @@ dependencies = [
     "fire>=0.7.0",
     "litserve>=0.2.12",
     "matplotlib>=3.10.3",
+    "mcp>=1.9.4",
     "notebook>=7.4.3",
     "numpy>=2.3.0",
     "optuna>=4.3.0",
