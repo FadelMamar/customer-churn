@@ -1,0 +1,31 @@
+# Preprocessing args
+numeric_cols: [
+        "Age",
+        "Tenure",
+        "Usage Frequency",
+        "Support Calls",
+        "Payment Delay",
+        "Total Spend",
+        "Last Interaction",
+    ]
+cols_to_drop: ["CustomerID"]
+
+# model name
+model_name: "logisticreg"
+
+### Hyperparameter search
+param_grid:
+    - penalty: ["l1", "l2"]
+    - tol: [0.0001,]
+    - C: [0.01, 0.1, 0.5, 1, 10, 50, 100]
+
+algorithm: "optuna"
+scoring: "f1"
+num_folds: 5
+shuffle_data: false
+verbose: 1
+
+# poly expansion
+poly_degree: 0
+add_interaction_only: false
+    

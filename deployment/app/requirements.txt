@@ -3,3 +3,4 @@ litserve>=0.2.12
 numpy>=2.3.0
 pandas>=2.3.0
 scikit-learn>=1.7.0
+mcp>=1.9.4

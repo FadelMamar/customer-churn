@@ -1,5 +1,4 @@
 
-
 def run_webservice(x:dict):
     import requests
     response = requests.post("http://127.0.0.1:4141/predict", json={"input": x})
@@ -32,5 +31,5 @@ if __name__ == "__main__":
 
     x_pred = X.sample(frac=0.05).to_dict(orient='list')
 
-    # run_webservice(x=x_pred)
-    run(x=x_pred)
+    run_webservice(x=x_pred)
+    # run(x=x_pred)

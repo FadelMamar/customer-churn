@@ -10,10 +10,13 @@ services:
     image: churnee:latest
 
     volumes:
-      - models:/models
+      - D:\workspace\repos\customer-churn\models:/models
+    
+    environment:
+      - MODEL_NAME=logisticreg_2025-06-12_14-06.joblib
 
     ports:
       - "4141:4141"
 
 volumes:
-  models: D:\workspace\repos\customer-churn\models
+  models: 

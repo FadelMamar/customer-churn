@@ -62,7 +62,7 @@ def run(data_path:str=r"..\data\train.csv",
         num_folds=5,
         shuffle=False,
         verbose=1,
-        n_jobs=2,
+        n_jobs=1,
         save_path=save_path
     )
 

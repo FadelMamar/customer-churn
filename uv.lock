@@ -262,6 +262,7 @@ dependencies = [
     { name = "optuna-dashboard" },
     { name = "optuna-integration", extra = ["sklearn"] },
     { name = "pandas" },
+    { name = "pyyaml" },
     { name = "scikit-learn" },
     { name = "seaborn" },
 ]
@@ -279,6 +280,7 @@ requires-dist = [
     { name = "optuna-dashboard", specifier = ">=0.18.0" },
     { name = "optuna-integration", extras = ["sklearn"], specifier = ">=4.3.0" },
     { name = "pandas", specifier = ">=2.3.0" },
+    { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "scikit-learn", specifier = ">=1.7.0" },
     { name = "seaborn", specifier = ">=0.13.2" },
 ]
