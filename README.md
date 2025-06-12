@@ -19,13 +19,12 @@ More info: https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-da
 
 
 # 🛠️ Tech Stack & Tools
-Category	Tools / Libraries
-Language	Python
-ML Libraries	scikit-learn, pandas, numpy, feature-engine
-Optimization	Optuna 
-Evaluation	Cross-validation, F1-score
-Deployment	Docker
-Visualization	matplotlib, seaborn
+* Language	Python
+* ML Libraries	scikit-learn, pandas, numpy, feature-engine
+* Optimization	Optuna 
+* Evaluation	Cross-validation, F1-score
+* Deployment	Docker
+* Visualization	matplotlib, seaborn
 
 # 📈 Model Development
 The modeling process included the following steps:
