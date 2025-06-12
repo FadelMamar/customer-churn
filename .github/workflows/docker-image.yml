@@ -23,6 +23,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: deployment
+          context: "{{defaultContext}}:deployment"
           push: true
           tags: user/churnee:latest
