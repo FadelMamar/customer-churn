@@ -63,6 +63,7 @@ The deployment allows an integration with Agentic AI workflows through an **MCP 
 
 
 # 🧪 Future Work
+* Convert trained model to ONNX
 * Integrate API endpoints for real-time prediction
 * Add logging and monitoring
 * Develop a Streamlit or Gradio frontend
